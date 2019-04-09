@@ -104,7 +104,7 @@ namespace Switch_Backup_Manager
             Util.UseTitleKeys = this.cbUseTitleKeys.Checked;
             Util.ini.IniWriteValue("Config", "useTitleKeys", cbUseTitleKeys.Checked ? "true" : "false");
 
-            for (int j = 1; j <= 5; j++ )
+            for (int j = 1; j <= 10; j++ )
             {
                 Util.ini.IniWriteValue("AutoScan", "Folder_0" + Convert.ToString(j), "");
             }
@@ -194,7 +194,7 @@ namespace Switch_Backup_Manager
             this.btnColorEshop.BackColor = Util.HighlightNSPOnScene_color;
             this.btnColorBoth.BackColor = Util.HighlightBothOnScene_color;
 
-            for (int i = 1; i <= 5; i++ )
+            for (int i = 1; i <= 10; i++ )
             {
                 string value = Util.ini.IniReadValue("AutoScan", "Folder_0" + i);
                 if (value.Trim() != "")
