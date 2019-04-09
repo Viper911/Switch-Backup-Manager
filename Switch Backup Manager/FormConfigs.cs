@@ -241,7 +241,7 @@ namespace Switch_Backup_Manager
 
         private void btnAddFolderAutoScan_Click(object sender, EventArgs e)
         {
-            if (checkedListBoxAutoScanFolders.Items.Count >= 5)
+            if (checkedListBoxAutoScanFolders.Items.Count >= 10)
             {
                 MessageBox.Show("Too many folders selected!");
                 return;

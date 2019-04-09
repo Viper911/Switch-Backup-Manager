@@ -889,10 +889,12 @@ namespace Switch_Backup_Manager
             var driveList = DriveInfo.GetDrives();
             foreach (DriveInfo drive in driveList)
             {
-                if (drive.DriveType == DriveType.Removable)
-                {
-                    cbxRemoveableDrives.Items.Add(drive.Name);
-                }
+                //if (drive.DriveType == DriveType.Removable)
+                //{
+                    //cbxRemoveableDrives.Items.Add(drive.Name);
+                //}
+                cbxRemoveableDrives.Items.Add(drive.Name);
+
             }
         }
 
